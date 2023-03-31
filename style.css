@@ -1,0 +1,253 @@
+#navbar{
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    position: absolute;
+    background-color: black;
+    
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#logo{
+    margin: 10px 10px;
+    color: white;
+}
+
+#logo img{
+    height: 52px;
+    width: 5%;
+    margin: 0px -10px;
+}
+
+ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+   
+}
+#navbar ul li a{
+    padding:10px 20px ;
+    display: block;
+    color: white;
+    border-radius: 10px;
+    border-style: bold;
+    text-decoration: none;
+}
+#navbar ul li a :hover{
+    background-color: white;
+    color: black;  
+    
+    
+}
+li:hover, a:hover{
+    background-color: powderblue;
+    border: 1px dashed black; 
+    color: black;
+}
+
+
+#home{
+   
+        display: flex;
+        flex-direction: column;
+        padding:0px 10px;
+        align-items:center;
+        background-color: antiquewhite;
+        background-image: url(images/food.jpg);
+        background-size: 100% 334%;
+        background-repeat: no-repeat;
+    }
+
+#home::before{
+    content: "";
+    position: absolute;
+    
+    content: "";
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#home h1{
+color: black;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* services section */
+
+#services{
+    margin: 20px;
+    display:flex;
+
+}
+
+
+#services.box{
+    border-radius: 20px;
+    border-style: solid;
+    border: 2px solid brown;
+    padding: 5px 5px;
+    margin: 3px;
+    background-color: azure;
+}
+
+#services.box .img{
+    height:100px;
+    width: 100px;
+}
+
+#special{
+    margin: 20px;
+    display:flex;
+
+}
+
+#special.box{
+    border-radius: 20px;
+    border-style: solid;
+    border: 2px solid brown;
+    padding: 5px 5px;
+    margin: 3px;
+    background-color: azure;
+}
+
+#special.box .img{
+    height:100px;
+    width: 100px;
+}
+
+/* utility classses */
+.hprimary{
+    font-size: 1.9rem;
+    padding: 12px;
+     
+}
+
+.hsecondry{
+    font-size: 0.9rem;
+    padding: 12px;
+
+}
+
+.btn{
+    padding: 4px 6px;
+    border: 3px solid black;
+    background: whitesmoke;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    /* font-size: small;
+    font-style: italic; */
+}
+/* client-section */
+#client-section{
+    background-color: red;
+    border-style: bold;
+    border-radius: 4px;
+}
+
+#client-section::before{
+    content: "";
+    background-color: blue;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+#clients img{
+    height:50px;
+    padding: 0px 150px;
+}
+.clientsitems{
+    padding:40px;
+}
+
+/* service container search bar */
+.services-containers form input{
+    background-color: aliceblue;
+    height: 20px;
+    width: 58%;
+    text-align: center;
+    font-size: large;
+}
+
+/* contact section */
+#contact{
+position: relative;
+}
+
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height:100%;
+opacity: 0.7;
+z-index: -1;
+background: purple;
+}
+
+#contact-box{
+    display: flex;
+    padding-bottom: 34px;
+    justify-content:center;
+    align-items: center;
+}
+#contact-box input{
+    width:100%;
+    padding: 0.5rem;
+}
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+    
+}
+#contact-box form{
+    width: 50%;
+
+}
+#contact-box label{
+    font-size:1.3rem;
+    padding:12px;
+}
+
+footer{
+    background: violet;
+    color: white;
+    padding: 15px 20px;
+
+}
+
+/* addational trials on the website */
+
+.box img{
+    height: 90px;
+    width: 100px;
+}
